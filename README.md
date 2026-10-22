@@ -1,36 +1,26 @@
-### Getting started
-There are various things you can do to quickly and efficiently configure your Codio Box to your exact requirements. 
+# Function Pointers Lab 5
 
-### GUI Applications and the Virtual Desktop 
-The Virtual Desktop allows you auto develop GUI based applications using any programming language. You can install a Virtual Desktop in your Box. You can then start the desktop and view it within the Codio IDE or in a new browser tab.
+## Overview
+This lab explores function pointers in C through two tasks: sorting process records using a custom comparator and performing arithmetic operations using an array of function pointers.
 
-[Virtual Desktop documentation](https://codio.com/docs/ide/boxes/installsw/gui/)
+## Task 1: Process Sorting
+Implemented a custom comparison function in `task1/func-ptr.c` to sort process records by priority in descending order and arrival time in ascending order when priorities are equal.
+
+## Task 2: Arithmetic Operations
+Implemented an array of function pointers in `task2/task2.c` to select and execute one of five operations based on user input:
+
+- `0` — Addition
+- `1` — Subtraction
+- `2` — Multiplication
+- `3` — Division
+- `4` — Exit
+
+The program uses function pointers to dispatch operations without conditional statements.
+
+## Project Structure
+
+- `task1/` — Source code and test data for process sorting.
+- `task2/` — Source code for the arithmetic operations.
+- `Makefile` — Project build instructions.
 
 
-### Command line access and the Terminal window
-All Codio Boxes provide sudo level privileges to the underlying Ubuntu server. This means you can install and configure any component you like. You access the terminal from the **Tools->Terminal** menu item.
-
-### Debugger
-The Codio IDE comes with a powerful visual debugger. Currently we support Python, Java, C, C++ and NodeJS. Other languages can be added on request.
-
-[Debugger documentation](https://codio.com/docs/ide/features/debugging/)
-
-
-### Content authoring and assessments
-Codio comes with a very powerful content authoring tool, Codio Guides. Guides is also where you create all forms of auto-graded assessments. 
-
-- [Guides documentation](https://codio.com/docs/content/authoring/overview/)
-- [Assessments documentation](https://codio.com/docs/content/authoring/assessments/)
-
-### Templating Box configurations and projects
-Codio offers two very powerful templating options so you can create new projects from those templates with just a couple of clicks. **Stacks** allow you to create snapshots of the Box’s underlying software configuration. You can then create new projects from a Stack avoiding having to configure anew each time you start a new project. **Starter Packs** allow you to template an entire project, including workspace code.
-
-- [Stacks documentation](https://codio.com/docs/project/stacks/)
-- [Starter Packs documentation](https://codio.com/docs/project/packs/)
-
-### Install software
-You can always install software onto your Box using the command line. However, Codio offers a shortcut for commonly installed components that can be accessed from the **Tools->Install Software** menu.
-
-We can easily add new items to the Install Software screen, so feel free to submit requests.
-
-[Install Software documentation](https://codio.com/docs/ide/boxes/installsw/box-parts/)
